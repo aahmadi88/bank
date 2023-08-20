@@ -88,26 +88,26 @@ function onEachFeature(feature, layer) {
     });
 }
 
-var legend = L.control({position: 'bottomright'});
+// var legend = L.control({position: 'bottomright'});
 
-legend.onAdd = function (map) {
+// legend.onAdd = function (map) {
 
-    var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0.0, 0.35, 0.45, 0.60, 0.70, 0.80, 0.99],
-        labels = [];
+//     var div = L.DomUtil.create('div', 'info legend'),
+//         grades = [0.0, 0.35, 0.45, 0.60, 0.70, 0.80, 0.99],
+//         labels = [];
 
-    // loop through our density intervals and generate a label with a colored square for each interval
-    for (var i = 1; i < grades.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] ) + '"></i> ' +
-            grades[i] + (grades[i] ? '&ndash;' + grades[i] + '<br>' : '+');
+//     // loop through our density intervals and generate a label with a colored square for each interval
+//     for (var i = 1; i < grades.length; i++) {
+//         div.innerHTML +=
+//             '<i style="background:' + getColor(grades[i] ) + '"></i> ' +
+//             grades[i] + (grades[i] ? '&ndash;' + grades[i] + '<br>' : '+');
 
-            // '<i style="background:' + getColor(grades[i] ) + '"></i> ' +
-            // grades[i] + (grades[i] ?  '<br>' : '');
-    }
+//             // '<i style="background:' + getColor(grades[i] ) + '"></i> ' +
+//             // grades[i] + (grades[i] ?  '<br>' : '');
+//     }
 
-    return div;
-};
+//     return div;
+// };
 
 
 // geojson = L.geoJSON(soft12, {
@@ -445,20 +445,7 @@ var baseMap = {
 
 };
 
-$(document).ready( function() {
-    $('.story').on('click', function(){
-        // parse lat and lng from the divs data attribute
-        var latlng = $(this).data().point.split(',');
-        var lat = latlng[0];
-        var lng = latlng[1];
-        var zoom = 15;
-    
-        // add a marker
-        var marker = L.marker([lat, lng],{}).addTo(map);
-        // set the view
-        map.setView([lat, lng], zoom);
-    })
-})
+
 
 
 var map = L.map('map', 
