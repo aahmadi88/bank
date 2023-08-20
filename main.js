@@ -9,7 +9,7 @@ var goecod =  L.Control.geocoder({
       var latlng = e.geocode.center;
       var marker = L.marker(latlng).addTo(map);
       map.fitBounds(e.geocode.bbox);
-      map.setZoom(14.5);
+      map.setZoom(14);
     })
 
 
