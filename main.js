@@ -453,9 +453,7 @@ var map = L.map('map',
     center: [ 35.722138, 51.388394],
     zoom: 11.5,
     layers: [osmMap,THR2]
-},
-
-
+}
 );
 
   
