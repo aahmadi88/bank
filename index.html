@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function showAlert() {
+          alert (" .پیشنهاد می شود ابتدا راهنمای استفاده از اپلیکیشن را مطالعه کنید و برای مشاهده منطقه نمونه منطقه تهرانپارس میدان پروین را جستجو کنید ");
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه تحلیل مکانی بازار </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+<body onload="showAlert()">
+    <div class="header" id="header" >
+        <div>
+            <a href="#default" class="logo"> (نسخه عمومی)سامانه تحلیل مکانی بازار  </a>
+            <div class="header-right">
+                <!-- <a class="story" data-point="35.74221,51.551849"> ZOOM </a> -->
+                <a href="help.html" class="btn" dir="rtl">راهنمای استفاده از اپلیکیشن</a>
+                <a href="index.html" class="btn" dir="rtl"> بازگشت به نقشه ها</a>
+                <a href="graph.html" class="btn" dir="rtl"> جداول و نمودار ناحیه نمونه</a>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <div id="about">
+        <footer>
+            <li><p style="font-size:12.9px">  
+                این سامانه با مدل سازی داده های مکانی و ارتباط آن با بازار مصرف کنندگان کالای خرده فروشی و ارائه آن به شکل نقشه های تحلیلی و توصیفی، برای سیستم های تصمیم گیری و تحلیل گران داده وهمچنین صاحبان کسب و کار به منظور بررسی و نظارت بر موقعیت خود،سطح رقابت و مصرف کنندگان کالا و خدمات در مناطق مختلف ایجاد شده است 
+            </p>
+                <a href="index.html" class="active" dir="rtl">  بازگشت به نقشه </a>
+        </footer>
+    </div>
+     
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <!-- jquery-->
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <!-- leaflet providers -->
+    <script src="resources/leaflet-providers.js"></script>
+    <!-- data -->
+    <script src="data/Ansar.js"></script>
+    <script src="data/Ayandeh.js"></script>
+    <script src="data/Bank_Intersect.js"></script>
+    <script src="data/Enovin.js"></script>
+    <script src="data/Iranzamin.js"></script>
+    <script src="data/Keshavarzi.js"></script>
+    <script src="data/Maskan.js"></script>
+    <script src="data/Mehr.js"></script>
+    <script src="data/Mellat.js"></script>
+    <script src="data/Melli.js"></script>
+    <script src="data/Other2.js"></script>
+    <script src="data/Parsian.js"></script>
+    <script src="data/Refah.js"></script>
+    <script src="data/Pasargad.js"></script>
+    <script src="data/Saderat.js"></script>
+    <script src="data/Shahr.js"></script>
+    <script src="data/Saman.js"></script>
+    <script src="data/Sepah.js"></script>
+    <script src="data/Sarmayeh.js"></script>
+    <script src="data/Sina.js"></script>
+    <script src="data/Tejarat.js"></script>
+    <script src="data/Taavon.js"></script>
+    <script src="data/THR2.js"></script>
+    <script src="data/Tourist.js"></script>
+    <script src="data/B1000_melli.js"></script>
+    <script src="data/Segment.js"></script>
+
+
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+
+ 
+
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+    <!-- <script>
+        w3.displayObject("id01", myObject);
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js">
+    </script> -->
+    <script src="main.js"></script>
+
+
+</body>
+</html>
