@@ -24,7 +24,7 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4> (Tehran:East/Region:4/Year:2000)  بانک </h4>' +  (props ?
+    this._div.innerHTML = '<h4> (Tehran:East/Region:4/Year:2019)  بانک </h4>' +  (props ?
         '<b>' + props.ProbBuyPow + '</b><br />' + props.ProbBuyPow + '  / mi<sup>2</sup>'
         : '    ( ابتدا لایه ها  از ایکون مربعی شکل بالا انتخاب شود  )');
 };
@@ -414,7 +414,7 @@ var overlayerMap ={
     "بانک آینده":ayandeh,
     "بانک اقتصاد نوین":Enovin,
     "بانک ایران زمین":iranzamin,
-    "بانک انصار":ansar,
+    "سپه(انصار)":ansar,
     "بانک پاسارگاد":pasargad,
     "بانک پارسیان":parsian,
     "بانک تجارت":tejarat,
@@ -428,7 +428,6 @@ var overlayerMap ={
     "بانک صادرات":saderat,
     "بانک گردشگری ":tourist,
     " بانک مسکن":maskan,
-    " بانک مهر":mehr,
     "  بانک ملت":mellat,
     " بانک ملی":melli,
     " شعاع 1000 متری بانک ملی ":B1000_melli,
